@@ -1,0 +1,35 @@
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Build
+*.class
+*.jar
+*.war
+build/
+target/
+out/
+
+# Gradle
+.gradle/
+!gradle-wrapper.jar
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Claude Code
+.claude/

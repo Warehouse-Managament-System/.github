@@ -1,0 +1,63 @@
+name: Bug Report
+description: Report a bug in the Warehouse Management System
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: service
+    attributes:
+      label: Affected Service
+      options:
+        - Identity Service
+        - Warehouse Service
+        - Booking Service
+        - Goods Service
+        - Delivery Service
+        - Billing Service
+        - Platform Service
+        - API Gateway
+        - Infrastructure (Eureka / Config / Kafka / Redis)
+        - Unknown / Multiple
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear description of what the bug is.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Step-by-step instructions to reproduce the behavior.
+      placeholder: |
+        1. Send POST to /customer/bookings with payload ...
+        2. Check booking status ...
+        3. See error ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What you expected to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened. Include error messages, status codes, or logs if available.
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Any other context — environment details, Kafka events, Zipkin trace IDs, etc.
