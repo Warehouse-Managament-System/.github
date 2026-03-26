@@ -8,14 +8,13 @@ body:
       label: Related Service
       options:
         - Identity Service
-        - Warehouse Service
-        - Booking Service
-        - Goods Service
+        - Inventory Service
+        - Reservation Service
         - Delivery Service
-        - Billing Service
         - Platform Service
         - API Gateway
         - Infrastructure
+        - wms-common
         - Cross-service / Platform-wide
         - Not sure
     validations:
